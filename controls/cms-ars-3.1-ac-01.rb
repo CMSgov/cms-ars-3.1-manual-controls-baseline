@@ -13,7 +13,7 @@ control 'AC-01' do
   
   tag "nist": ['AC-01', 'Rev_4']
   
-  desc "check": "Determine if the organization has implemented all elements of this control as described in the control statements and implementation standard(s). 
+  desc "check", "Determine if the organization has implemented all elements of this control as described in the control statements and implementation standard(s). 
   Examine: Access control policy and procedures; system security plan, other relevant documents or records.
   Examine: Verify that the access control procedures are consistent with access control policy.
   Examine: Verify that the access control procedures address all areas identified in the access control policy and address achieving policy-compliant implementations of 
@@ -27,7 +27,7 @@ control 'AC-01' do
     2. Know of and understand Access Control policy and procedures; and 
     3. Are responsible for reviewing and updating Access Control policy and procedures no less often than required."
     
-  desc "fix": "Systems processing, storing, or transmitting PHI:
+  desc "fix", "Systems processing, storing, or transmitting PHI:
     PHI.1 - The organization develops, disseminates, and reviews/updates the access control policies and procedures complying with the HIPAA Minimum Necessary Rule and 
     permitted or required uses and disclosures, to limit unnecessary or inappropriate access to PHI."
     
