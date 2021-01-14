@@ -1,4 +1,4 @@
-control 'AC-01' do
+control 'CMS-ARS-3.1-AC-01' do
   title 'Access Control Policy and Procedures'
   
   desc  "The organization:a. Develops, documents, and disseminates to applicable personnel:  
@@ -11,7 +11,10 @@ control 'AC-01' do
   
   tag "nist": ["AC-1", "Rev_4"]
   
-  desc "check", "Determine if the organization has implemented all elements of this control as described in the control statements and implementation standard(s). 
+  desc "check", "Assessment Objective:
+  Determine if the organization has implemented all elements of this control as described in the control statements and implementation standard(s). 
+
+  Assessment Methods and Objects:
   Examine: Access control policy and procedures; system security plan, other relevant documents or records.
   Examine: Verify that the access control procedures are consistent with access control policy.
   Examine: Verify that the access control procedures address all areas identified in the access control policy and address achieving policy-compliant implementations of 
@@ -25,11 +28,28 @@ control 'AC-01' do
     2. Know of and understand Access Control policy and procedures; and 
     3. Are responsible for reviewing and updating Access Control policy and procedures no less often than required."
     
-  desc "fix", "Systems processing, storing, or transmitting PHI:
+  desc "fix", "
+    Implementation Standards:
+    Systems processing, storing, or transmitting PHI:
     PHI.1 - The organization develops, disseminates, and reviews/updates the access control policies and procedures complying with the HIPAA Minimum Necessary Rule and 
-    permitted or required uses and disclosures, to limit unnecessary or inappropriate access to PHI."
+    permitted or required uses and disclosures, to limit unnecessary or inappropriate access to PHI.
+
+    Supplemental Guidance:
+    This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the AC family. 
+    Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures 
+    at the organization level may make the need for system-specific policies and procedures unnecessary. 
+    The policy can be included as part of the general information security policy for organizations or, conversely, can be represented by multiple policies reflecting 
+    the complex nature of certain organizations. The procedures can be established for the security program in general and for information systems, if needed. 
+    The organizational risk management strategy is a key factor in establishing policy and procedures.
+
+    Guidance for systems processing, storing, or transmitting PII (to include PHI):
+    Access Control policies and procedures form the foundation that allows privacy protections to be implemented for the identified uses of personally identifiable information
+    (PII) and protected health information (PHI). Privacy requirements commonly use the terms “adequate security” and “confidentiality” when referring to access controls and
+    other security safeguards for PII. Applied together, these terms signify the need to make risk-based decisions based on the magnitude of harm (to both organizations and 
+    individuals) when determining applicable restrictions for PII. For this overlay, refer to the definitions of “adequate security” in OMB Circular A-130, Appendix III, and 
+    “confidentiality” in NIST SP 800-37, Rev. 1, Appendix B. These definitions are consistent with Committee for National Security Systems Instruction (CNSSI) No. 4009."
     
-  describe "A manual review/attestation is required for this control" do
-    skip "A manual review/attestation is required for this control"
+  describe "A manual review/attestation is required to address interview/examine assessment objectives for this control" do
+    skip "A manual review/attestation is required to address interview/examine assessment objectives for this control"
   end
 end
