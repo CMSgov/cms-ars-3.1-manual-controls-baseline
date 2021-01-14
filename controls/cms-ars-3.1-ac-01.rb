@@ -1,5 +1,5 @@
 control 'CMS-ARS-3.1-AC-01' do
-  title 'Access Control Policy and Procedures'
+  title "Access Control Policy and Procedures"
   
   desc  "Control:
   The organization:a. Develops, documents, and disseminates to applicable personnel:  
@@ -36,8 +36,7 @@ control 'CMS-ARS-3.1-AC-01' do
     2. Know of and understand Access Control policy and procedures; and 
     3. Are responsible for reviewing and updating Access Control policy and procedures no less often than required."
     
-  desc "fix", "
-    Implementation Standards:
+  desc "fix", "Implementation Standards:
     Systems processing, storing, or transmitting PHI:
     PHI.1 - The organization develops, disseminates, and reviews/updates the access control policies and procedures complying with the HIPAA Minimum Necessary Rule and 
     permitted or required uses and disclosures, to limit unnecessary or inappropriate access to PHI.
