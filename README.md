@@ -1,11 +1,11 @@
 # cms-ars-3.1-manual-controls-baseline
 
-To demonstrate https://github.com/mitre/inspec-reporter-json-hdf for attestation against manual controls
+# To demonstrate https://github.com/mitre/inspec-reporter-json-hdf for attestation against manual controls
 
 ```
 inspec exec https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter cli hdf:cms-ars-3.1-manual-controls-baseline_01142021A.json --config attestation.json
 ```
-See sample attestations file content:
+# See sample attestations file content below. (See attestation file in /samples.)
 ```
 {
     "plugins": {
@@ -26,8 +26,9 @@ See sample attestations file content:
 }
 ```
 
-On the left, attestation applied within the time frame designated in the attestation.json file.
-On the right, either no attestation was provided or the attestation has expired based on the settings in the attestation file.
+# On the left, attestation applied within the time frame designated in the attestation.json file. (See output file in /samples.)
+
+# On the right, either no attestation was provided or the attestation has expired based on the settings in the attestation file. (See output file in /samples.)
 
 ![snapshot](https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/blob/main/samples/snap2.gif)
 
