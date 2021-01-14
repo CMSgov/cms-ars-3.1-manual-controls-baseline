@@ -11,7 +11,7 @@ control 'AC-01' do
   
   tag "severity": 'medium'
   
-  tag "nist": ['AC-01', 'Rev_4']
+  tag "nist": ['AC-1', 'Rev_4']
   
   desc "check", "Determine if the organization has implemented all elements of this control as described in the control statements and implementation standard(s). 
   Examine: Access control policy and procedures; system security plan, other relevant documents or records.
