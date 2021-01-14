@@ -26,5 +26,8 @@ See sample attestations file content:
 }
 ```
 
+On the left, attestation applied within the time frame designated in the attestation.json file.
+On the right, either no attestation was provided or the attestation has expired based on the settings in the attestation file.
+
 ![snapshot](https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/blob/main/samples/snap2.gif)
 
