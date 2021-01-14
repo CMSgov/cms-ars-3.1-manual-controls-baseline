@@ -9,8 +9,6 @@ control 'AC-01' do
    
   impact 0.5
   
-  tag "severity": 'medium'
-  
   tag "nist": ["AC-1", "Rev_4"]
   
   desc "check", "Determine if the organization has implemented all elements of this control as described in the control statements and implementation standard(s). 
