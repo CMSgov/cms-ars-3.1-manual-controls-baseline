@@ -10,7 +10,7 @@ control 'CMS-ARS-3.1-AC-01' do
    
   impact 0.5
   
-  tag "nist": ["AC-01", "Rev_4"]
+  tag "nist": ["AC-1", "Rev_4"]
   tag "nist-family": "Access Control"
   tag "cms-ars-type": "Mandatory"
   tag "cms-ars-baseline": ["High","Moderate","Low"]
