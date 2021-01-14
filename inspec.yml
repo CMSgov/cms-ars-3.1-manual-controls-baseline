@@ -1,0 +1,10 @@
+name: cms-ars-3.1-manual-controls-baseline
+title: cms-ars-3.1-manual-controls-baseline
+maintainer: MITRE InSpec Team
+copyright: The MITRE Corporation, 2018
+copyright_email: .
+summary: CMS ARS 3.1 Manual Controls Baseline InSpec Profile
+license: Apache-2.0
+Description: An InSpec Manual Compliance Attestation profile
+version: 1.0.0
+inspec_version: ">= 4.0"
