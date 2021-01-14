@@ -27,3 +27,4 @@ See sample attestations file content:
 ```
 
 ![snapshot](https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/blob/main/samples/snap.gif)
+
