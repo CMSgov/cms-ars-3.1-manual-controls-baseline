@@ -3,7 +3,7 @@
 To demonstrate https://github.com/mitre/inspec-reporter-json-hdf for attestation against manual controls
 
 ```
-inspec exec https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter cli hdf:cms-ars-3.1-manual-controls-baseline_01132021B.json --config attestation.json
+inspec exec https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter cli hdf:cms-ars-3.1-manual-controls-baseline_01142021A.json --config attestation.json
 ```
 See sample attestations file content:
 ```
