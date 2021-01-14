@@ -1,7 +1,8 @@
 control 'CMS-ARS-3.1-AC-01' do
   title 'Access Control Policy and Procedures'
   
-  desc  "The organization:a. Develops, documents, and disseminates to applicable personnel:  
+  desc  "Control:
+  The organization:a. Develops, documents, and disseminates to applicable personnel:  
   1. An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and  
   2. Procedures to facilitate the implementation of the access control policy and associated access controls; and b. Reviews and updates (as necessary) the current:   
    1. Access control policy at least every three (3) years; and  
@@ -9,7 +10,14 @@ control 'CMS-ARS-3.1-AC-01' do
    
   impact 0.5
   
-  tag "nist": ["AC-1", "Rev_4"]
+  tag "nist": ["AC-01", "Rev_4"]
+  tag "nist-family": "Access Control"
+  tag "cms-ars-type": "Mandatory"
+  tag "cms-ars-baseline": ["High","Moderate","Low"]
+  tag "cms-ars-assurance": "Assurance"
+  tag "cms-ars-priority": "P1"
+  tag "cms-ars-reference-policy": "Code: 5 United States Code (U.S.C.) §552a(b), (e)(9)-(10); FedRAMP Rev. 4 Baseline; FISCAM: AS-1, SM-1, SM-3; HIPAA: 45 C.F.R. §164.308(a)(3)(i); 45 C.F.R. §164.308(a)(3)(ii)(A); 45 C.F.R. §164.308(a)(4)(i); 45 C.F.R. §164.308(a)(4)(ii)(B); 45 C.F.R. §164.308(a)(4)(ii)(C); 45 C.F.R. §164.312(a)(1); 45 C.F.R. §164.514(d)(1)-(5); NIST SP: 800-12, 800-37 Rev. 1 Appendix B, 800-100, 800-122; OMB Memo: M-06-16, M-17-12, Att. 4; OMB Circular A-130: 7.g. and Appendix III"
+  tag "related-controls": ["PM-9", "AR-4", "AR-7"]
   
   desc "check", "Assessment Objective:
   Determine if the organization has implemented all elements of this control as described in the control statements and implementation standard(s). 
