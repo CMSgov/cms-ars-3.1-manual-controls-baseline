@@ -25,3 +25,5 @@ See sample attestations file content:
     "version": "1.2"
 }
 ```
+
+![snapshot](https://github.com/ejaronne/samples/snap.gif)
