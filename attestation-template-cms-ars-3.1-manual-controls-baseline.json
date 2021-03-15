@@ -1107,7 +1107,7 @@
                     "updated_by": ""
                 },
                 {
-                    "control_id": "CMS-ARS-3.1-CM-07(05)",
+                    "control_id": "CMS-ARS-3.1-CM-07(05)H",
                     "explanation": "",
                     "frequency": "daily",
                     "status": "passed",
@@ -1115,7 +1115,7 @@
                     "updated_by": ""
                 },
                 {
-                    "control_id": "CMS-ARS-3.1-CM-07(05)",
+                    "control_id": "CMS-ARS-3.1-CM-07(05)ML",
                     "explanation": "",
                     "frequency": "daily",
                     "status": "passed",
