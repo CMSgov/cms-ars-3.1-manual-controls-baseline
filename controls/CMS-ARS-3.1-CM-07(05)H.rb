@@ -3,16 +3,7 @@
 control 'CMS-ARS-3.1-CM-07(05)H' do
   title 'Authorized Software/Whitelisting '
   desc  "Control:
-    Per NIST SP 800-53r4, when software whitelisting is implemented under FIPS
-199 security categorizations as Moderate, software blacklisting (CM-7(4),
-Unauthorized Software/Blacklisting) is not required. If software whitelisting
-is implemented, the organization: a. Identifies defined software programs
-(defined in the applicable security plan) authorized to execute on the
-information system; b. Employs a deny-all, permit-by-exception policy to allow
-the execution of authorized software programs on the information system; c.
-Reviews and updates the list of authorized software programs no less often than
-every seventy-two (72) hours; andd. Receives automated updates from a trusted
-source.The organization: a. Identifies defined software programs (defined in the applicable security plan) authorized to execute on the information system; b. Employs a deny-all, permit-by-exception policy to allow the execution of authorized software programs on the information system; c. Reviews and updates the list of authorized software programs no less often than every seventy-two (72) hours; andd. Receives automated updates from a trusted source.
+The organization: a. Identifies defined software programs (defined in the applicable security plan) authorized to execute on the information system; b. Employs a deny-all, permit-by-exception policy to allow the execution of authorized software programs on the information system; c. Reviews and updates the list of authorized software programs no less often than every seventy-two (72) hours; andd. Receives automated updates from a trusted source.
 
 Systems defined as CSPs:
 
