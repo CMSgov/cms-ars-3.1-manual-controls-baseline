@@ -38,6 +38,8 @@ __After installing InSpec, run this command to support addressing/automating man
 inspec exec https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter hdf:cms-ars-3.1-manual-controls-baseline_01142021A.json --config my_attestation.json
 ```
 ### Addressing manual controls
+![image](https://user-images.githubusercontent.com/34140975/111168055-159b4880-8578-11eb-98fc-6a0085f057a5.png)
+
 #### Prepare your attestations file content. (See [attestation sample template](https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/blob/update/attestation-template-cms-ars-3.1-manual-controls-baseline.json))
 
 By default, controls in this profile require manual review, whereby someone interviews/examines the requirement and confirms (attests as to) whether or not the control requirements have been satisfied. These attestations must be configured in a json ".json" file:
