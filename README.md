@@ -33,7 +33,8 @@ __After installing InSpec, run this command to support addressing/automating man
 ```
 
 ### Addressing manual controls
-![image](https://user-images.githubusercontent.com/34140975/111168055-159b4880-8578-11eb-98fc-6a0085f057a5.png)
+![image](https://user-images.githubusercontent.com/34140975/111183325-294dab80-8586-11eb-908a-912db61894c7.png)
+
 
 #### Prepare your attestations file content. (See [attestation sample template](https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/blob/update/attestation-template-cms-ars-3.1-manual-controls-baseline.json))
 
