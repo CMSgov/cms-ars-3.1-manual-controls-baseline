@@ -32,11 +32,6 @@ __After installing InSpec, run this command to support addressing/automating man
 "cinc-auditor plugin install inspec-reporter-json-hdf" 
 ```
 
-#### To demonstrate https://github.com/mitre/inspec-reporter-json-hdf for attestation against manual controls
-
-```
-inspec exec https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter hdf:cms-ars-3.1-manual-controls-baseline_01142021A.json --config my_attestation.json
-```
 ### Addressing manual controls
 ![image](https://user-images.githubusercontent.com/34140975/111168055-159b4880-8578-11eb-98fc-6a0085f057a5.png)
 
@@ -96,7 +91,7 @@ _for example_
 
 ```
 # How to run
-cin-auditor exec https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter hdf:cms-ars-3.1-manual-controls-baseline_01142021A.json --config my_attestation.json
+cinc-auditor exec https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
 ```
 
 ### Different Run Options
@@ -116,7 +111,7 @@ mkdir profiles
 cd profiles
 git clone https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline.git
 cinc-auditor archive cms-ars-3.1-manual-controls-baseline
-cinc-auditor exec <name of generated archive> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
+cinc-auditor exec <name of generated archive> --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
 ```
 
 For every successive run, follow these steps to always have the latest version of this overlay and dependent profiles:
@@ -126,7 +121,7 @@ cd cms-ars-3.1-manual-controls-baseline
 git pull
 cd ..
 cinc-auditor archive cms-ars-3.1-manual-controls-baseline --overwrite
-cinc-auditor exec <name of generated archive> --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
+cinc-auditor exec <name of generated archive> --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
 ```
 
 ## Using Heimdall for Viewing the JSON Results
