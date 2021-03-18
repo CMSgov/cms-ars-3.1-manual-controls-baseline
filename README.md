@@ -143,7 +143,7 @@ The JSON InSpec results file may also be loaded into a __[full heimdall server](
 * Rony Xavier - [rx294](https://github.com/rx294)
 
 ## Contributing and Getting Help
-To report a bug or feature request, please open an [issue](https://github.com/CMSgov/cms-ars-3.1-moderate-aws-rds-oracle-mysql-ee-5.7-cis-overlay/issues/new).
+To report a bug or feature request, please open an [issue](https://github.com/CMSgov/cms-ars-3.1-manual-controls-baseline/issues/new).
 
 ### NOTICE
 
