@@ -43,7 +43,7 @@ __After installing InSpec, run this command to support addressing/automating man
 ![image](https://user-images.githubusercontent.com/34140975/111353333-941ce680-865b-11eb-9d5e-d68acc9b0564.png)
 
 
-#### Prepare your attestations file content. (See [attestation sample template](https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/blob/update/attestation-template-cms-ars-3.1-manual-controls-baseline.json))
+#### Prepare your attestations file content. (See [attestation sample template](https://github.com/cmsgov/cms-ars-3.1-manual-controls-baseline/blob/update/attestation-template-cms-ars-3.1-manual-controls-baseline.json))
 
 By default, controls in this profile require manual review, whereby someone interviews/examines the requirement and confirms (attests as to) whether or not the control requirements have been satisfied. These attestations must be configured in a json ".json" file:
 ```
@@ -99,7 +99,7 @@ _for example_
 
 ```
 # How to run
-cinc-auditor exec https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
+cinc-auditor exec https://github.com/cmsgov/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
 ```
 
 ### Different Run Options
@@ -117,7 +117,7 @@ When the __"runner"__ host uses this profile overlay for the first time, follow 
 ```
 mkdir profiles
 cd profiles
-git clone https://github.com/ejaronne/cms-ars-3.1-manual-controls-baseline.git
+git clone https://github.com/cmsgov/cms-ars-3.1-manual-controls-baseline.git
 cinc-auditor archive cms-ars-3.1-manual-controls-baseline
 cinc-auditor exec <name of generated archive> --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
 ```
