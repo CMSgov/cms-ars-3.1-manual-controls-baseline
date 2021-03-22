@@ -6,7 +6,7 @@ InSpec profile baseline to **automate manual controls** of [CMS ARS 3.1](https:/
 ### InSpec (CINC-auditor) setup
 For maximum flexibility/accessibility, we’re moving to “cinc-auditor”, the open-source packaged binary version of Chef InSpec, compiled by the CINC (CINC Is Not Chef) project in coordination with Chef using Chef’s always-open-source InSpec source code. For more information: https://cinc.sh/
 
-It is intended and recommended that CINC-auditor and this profile overlay be run from a __"runner"__ host (such as a DevOps orchestration server, an administrative management system, or a developer's workstation/laptop) against the target. This can be any Unix/Linux/MacOS or Windows runner host, with access to the Internet.
+It is intended and recommended that CINC-auditor and this profile overlay be run from a __"runner"__ host (such as a DevOps orchestration server, an administrative management system, or a developer's workstation/laptop). This can be any Unix/Linux/MacOS or Windows runner host, with access to the Internet.
 
 __For the best security of the runner, always install on the runner the _latest version_ of CINC-auditor.__ 
 
