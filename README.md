@@ -27,7 +27,7 @@ cinc-auditor -v
 
 Latest versions and other installation options are available at https://cinc.sh/start/auditor/.
 
-__After installing InSpec, run this command to support addressing/automating manual controls (discussed below):__
+### After installing InSpec, run this command to support addressing/automating manual controls (discussed below):
 ```
 "cinc-auditor plugin install inspec-reporter-json-hdf" 
 ```
