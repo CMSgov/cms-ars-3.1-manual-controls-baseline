@@ -50,6 +50,10 @@ By default, controls in this profile require manual review, whereby someone inte
 {
     "plugins": {
         "inspec-reporter-json-hdf": {
+            "include-attestations-file": {
+                "path": "<path_to_your_attestations_file/name_of_your_attestations_file.xlsx>",
+                "type": "xlsx"
+            },
             "attestations": [
                 {
                     "control_id": "2.4",
@@ -79,13 +83,17 @@ _for example_
 {
     "plugins": {
         "inspec-reporter-json-hdf": {
+            "include-attestations-file": {
+                "path": "./my_attestations-template-cms-ars-3.1-manual-controls-baseline_04122021.xlsx",
+                "type": "xlsx"
+            },
             "attestations": [
                 {
                     "control_id": "CMS-ARS-3.1-AC-01",
                     "explanation": "Examined ARS 3.1, IS2P2, and HHS parent Access Control policy documents and interviewed staff to confirm that these are still applicable, understood, and applied to our system.",
-                    "frequency": "annually",
+                    "frequency": "daily",
                     "status": "passed",
-                    "updated": "2020-4-1",
+                    "updated": "2020-4-21",
                     "updated_by": "John Doe, ISSO"
                 }
             ]
