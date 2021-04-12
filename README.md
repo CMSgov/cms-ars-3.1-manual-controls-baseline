@@ -36,7 +36,7 @@ Latest versions and other installation options are available at https://cinc.sh/
 
 **Viewing the HDF json in __[Heimdall](https://heimdall-lite.cms.gov/)__:**  
 
-![image](https://user-images.githubusercontent.com/34140975/111218226-d509f200-85ac-11eb-8674-5cc0f13fdadf.png)
+![image](https://user-images.githubusercontent.com/34140975/114476030-7ba2dc00-9bc7-11eb-95b7-16a7ff328d10.png)
 
 **Exported from Heimdall to CAAT file:**  
 
