@@ -1,0 +1,11 @@
+{
+    "plugins": {
+        "inspec-reporter-json-hdf": {
+            "include-attestations-file": {
+                "path": "./attestation-template-cms-ars-3.1-manual-controls-baseline.xlsx",
+                "type": "xlsx"
+            }
+        }
+    },
+    "version": "1.2"
+}
