@@ -48,6 +48,23 @@ By default, controls in this profile require manual review, whereby someone inte
  
 ![image](https://user-images.githubusercontent.com/34140975/114488896-2cb57080-9be0-11eb-81bb-407f00408792.png)
 
+Where:
+```
+Control_ID:	<InSpec Control ID>  
+
+Explanation:	<Attestation text explaining compliance or non-compliance>  
+
+Frequency:	<How often this review/attestation needs to be updated>  
+Supported frequency choices:  annually, semiannually, quarterly, monthly, every2weeks, weekly, every3days, daily  
+
+Status:	<assigned status based on review/attestation>  
+Supported status value choices: passed, failed  
+
+Updated:	<last date attestation was performed (in YYYY-MM-DD format)> (e.g., 2021-04-12)  
+
+Updated_By:	<Name, Role of person performing attestation for this control>  
+```
+
 ## Identify this file Excel in your json ".json" HDF plugin configuration file (See HDF plugin config .json file template in the samples folder):
 
 ```
