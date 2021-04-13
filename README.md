@@ -48,7 +48,7 @@ By default, controls in this profile require manual review, whereby someone inte
  
 ![image](https://user-images.githubusercontent.com/34140975/114488896-2cb57080-9be0-11eb-81bb-407f00408792.png)
 
-## Identify this file Excel in your json ".json" HDF plugin configuration file:
+## Identify this file Excel in your json ".json" HDF plugin configuration file (See HDF plugin config .json file template in the samples folder):
 
 ```
 {
@@ -57,17 +57,7 @@ By default, controls in this profile require manual review, whereby someone inte
             "include-attestations-file": {
                 "path": "<path_to_your_attestations_file/name_of_your_attestations_file.xlsx>",
                 "type": "xlsx"
-            },
-            "attestations": [
-                {
-                    "control_id": "<InSpec Control ID>",                 
-                    "explanation": "<Attestation text explaining compliance or non-compliance>",                    
-                    "frequency": "<How often this review/attestation needs to be updated>", (frequency value choices: annually, semiannually, quarterly, monthly, every2weeks, weekly, every3days, daily)             
-                    "status": "<assigned value based on review/attestation>", (status value choices: passed, failed)
-                    "updated": "<last date attestation was performed (in YYYY-MM-DD format)>",                                        
-                    "updated_by": "<Name, Role of person providing attestation for this control>" 
-                }
-            ]
+            }
         }
     },
     "version": "1.2"
@@ -79,26 +69,16 @@ _for example_
     "plugins": {
         "inspec-reporter-json-hdf": {
             "include-attestations-file": {
-                "path": "./my_attestations-template-cms-ars-3.1-manual-controls-baseline_04122021.xlsx",
+                "path": "./attestation-template-cms-ars-3.1-manual-controls-baseline.xlsx",
                 "type": "xlsx"
-            },
-            "attestations": [
-                {
-                    "control_id": "CMS-ARS-3.1-AC-01",
-                    "explanation": "Examined ARS 3.1, IS2P2, and HHS parent Access Control policy documents and interviewed staff to confirm that these are still applicable, understood, and applied to our system.",
-                    "frequency": "annually",
-                    "status": "passed",
-                    "updated": "2020-4-21",
-                    "updated_by": "John Doe, ISSO"
-                }
-            ]
+            }
         }
     },
     "version": "1.2"
 }
 ```
-### **Note**: as shown above, one can also specify attestations directly json format within the HDF plugin config json file.  
-**(These take precedence over Control IDs attested to in the Excel file)**
+### One can also specify attestations directly in json format within the HDF plugin config json file. 
+**(These take precedence over Control IDs attested to in the Excel file)**. (See HDF plugin config .json file template in the samples folder)
 
 ## Running This Overlay Directly from Github
 
