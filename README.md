@@ -40,12 +40,16 @@ Latest versions and other installation options are available at https://cinc.sh/
 
 **Exported from Heimdall to CAAT file:**  
 
-![image](https://user-images.githubusercontent.com/34140975/111353333-941ce680-865b-11eb-9d5e-d68acc9b0564.png)
+![image](https://user-images.githubusercontent.com/34140975/114484586-80bc5700-9bd8-11eb-9d11-65b082b3143b.png)
 
+By default, controls in this profile require manual review, whereby someone interviews/examines the requirement and confirms (attests as to) whether or not the control requirements have been satisfied. These attestations can be provided to this profile as follows:
 
-#### Prepare your attestations file content. (See [attestation sample template](https://github.com/cmsgov/cms-ars-3.1-manual-controls-baseline/blob/update/attestation-template-cms-ars-3.1-manual-controls-baseline.json))
+## Prepare your attestations Excel (XLSX) file to address manual controls (See .xlxs template in the samples folder):
+ 
+![image](https://user-images.githubusercontent.com/34140975/114488896-2cb57080-9be0-11eb-81bb-407f00408792.png)
 
-By default, controls in this profile require manual review, whereby someone interviews/examines the requirement and confirms (attests as to) whether or not the control requirements have been satisfied. These attestations must be configured in a json ".json" file:
+## Identify this file Excel in your json ".json" HDF plugin configuration file:
+
 ```
 {
     "plugins": {
@@ -56,21 +60,12 @@ By default, controls in this profile require manual review, whereby someone inte
             },
             "attestations": [
                 {
-                    "control_id": "2.4",
-                    
-                    "explanation": "<Attestation text explaining compliance or non-compliance>",
-                    
-                    "frequency": "<How often this review/attestation needs to be updated>", 
-                   
-         (frequency value choices: annually, semiannually, quarterly, monthly, every2weeks, weekly, every3days, daily)
-             
-                    "status": "<assigned value based on review/attestation>",
-                    
-            (status value choices: passed, failed)
-
-                    "updated": "<last date attestation was performed (in YYYY-MM-DD format)>",
-                                        
-                    "updated_by": "<Name, Role of person performing attestation for this control>" 
+                    "control_id": "<InSpec Control ID>",                 
+                    "explanation": "<Attestation text explaining compliance or non-compliance>",                    
+                    "frequency": "<How often this review/attestation needs to be updated>", (frequency value choices: annually, semiannually, quarterly, monthly, every2weeks, weekly, every3days, daily)             
+                    "status": "<assigned value based on review/attestation>", (status value choices: passed, failed)
+                    "updated": "<last date attestation was performed (in YYYY-MM-DD format)>",                                        
+                    "updated_by": "<Name, Role of person providing attestation for this control>" 
                 }
             ]
         }
@@ -91,7 +86,7 @@ _for example_
                 {
                     "control_id": "CMS-ARS-3.1-AC-01",
                     "explanation": "Examined ARS 3.1, IS2P2, and HHS parent Access Control policy documents and interviewed staff to confirm that these are still applicable, understood, and applied to our system.",
-                    "frequency": "daily",
+                    "frequency": "annually",
                     "status": "passed",
                     "updated": "2020-4-21",
                     "updated_by": "John Doe, ISSO"
@@ -102,12 +97,14 @@ _for example_
     "version": "1.2"
 }
 ```
+### **Note**: as shown above, one can also specify attestations directly json format within the HDF plugin config json file.  
+**(These take precedence over Control IDs attested to in the Excel file)**
 
 ## Running This Overlay Directly from Github
 
 ```
 # How to run
-cinc-auditor exec https://github.com/cmsgov/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
+cinc-auditor exec https://github.com/cmsgov/cms-ars-3.1-manual-controls-baseline/archive/main.tar.gz --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_config_file/name_of_your_attestation_config_file.json>
 ```
 
 ### Different Run Options
@@ -127,7 +124,7 @@ mkdir profiles
 cd profiles
 git clone https://github.com/cmsgov/cms-ars-3.1-manual-controls-baseline.git
 cinc-auditor archive cms-ars-3.1-manual-controls-baseline
-cinc-auditor exec <name of generated archive> --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
+cinc-auditor exec <name of generated archive> --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_config_file/name_of_your_attestation_config_file.json>
 ```
 
 For every successive run, follow these steps to always have the latest version of this overlay and dependent profiles:
@@ -137,7 +134,7 @@ cd cms-ars-3.1-manual-controls-baseline
 git pull
 cd ..
 cinc-auditor archive cms-ars-3.1-manual-controls-baseline --overwrite
-cinc-auditor exec <name of generated archive> --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_file/name_of_your_attestation_file.json>
+cinc-auditor exec <name of generated archive> --reporter hdf:<path_to_your_output_file/name_of_your_output_file.json> --config <path_to_your_attestation_config_file/name_of_your_attestation_config_file.json>
 ```
 
 ## Using Heimdall for Viewing the JSON Results
